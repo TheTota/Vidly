@@ -109,3 +109,4 @@ D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMem
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.ApplyAnnotationsToCustomerName.resources
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddNameToMembershipType.resources
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMembershipTypeNames.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddBirthDate.resources
