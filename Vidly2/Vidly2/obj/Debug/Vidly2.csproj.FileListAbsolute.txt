@@ -101,3 +101,9 @@ D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.csprojAssemblyReferenc
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.csproj.CopyComplete
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.dll
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.pdb
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.InitialModel.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.csproj.GenerateResource.cache
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddIsSubscribedToNewsletter.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddMembershipType.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMembershipTypes.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.ApplyAnnotationsToCustomerName.resources
