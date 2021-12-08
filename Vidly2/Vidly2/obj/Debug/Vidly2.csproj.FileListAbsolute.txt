@@ -107,3 +107,5 @@ D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddIsSubscr
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddMembershipType.resources
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMembershipTypes.resources
 D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.ApplyAnnotationsToCustomerName.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.AddNameToMembershipType.resources
+D:\Programmation\C#\Vidly2\Vidly2\Vidly2\obj\Debug\Vidly2.Migrations.PopulateMembershipTypeNames.resources
