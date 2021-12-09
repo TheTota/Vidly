@@ -4,11 +4,10 @@ using System.Linq;
 using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
-using Vidly.Models;
-using Vidly.ViewModels;
 using Vidly2.Models;
+using Vidly2.ViewModels;
 
-namespace Vidly.Controllers
+namespace Vidly2.Controllers
 {
     public class CustomersController : Controller
     {
@@ -31,6 +30,17 @@ namespace Vidly.Controllers
             return View(customers);
         }
 
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View(viewModel);
+        }
+
         [Route("customers/details/{id}")]
         public ActionResult Details(int id)
         {
@@ -40,6 +50,6 @@ namespace Vidly.Controllers
                 return HttpNotFound();
 
             return View(customer);
-        }  
+        }
     }
 }

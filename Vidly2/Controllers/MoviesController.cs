@@ -4,11 +4,10 @@ using System.Linq;
 using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
-using Vidly.Models;
-using Vidly.ViewModels;
 using Vidly2.Models;
+using Vidly2.ViewModels;
 
-namespace Vidly.Controllers
+namespace Vidly2.Controllers
 {
     public class MoviesController : Controller
     {
