@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly2.Models;
 using Vidly2.ViewModels;
+using System.Data.Entity.Validation;
 
 namespace Vidly2.Controllers
 {
@@ -60,15 +61,54 @@ namespace Vidly2.Controllers
             return View(viewModel);
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult New()
         {
-            return Content("id=" + id);
+            var movieGenres = _context.MovieGenres.ToList();
+            var viewModel = new MovieFormViewModel
+            {
+                MovieGenres = movieGenres
+            };
+
+            return View("MovieForm", viewModel);
         }
 
-        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1,12)}")]
-        public ActionResult ByReleaseDate(int year, int month)
+        [HttpPost]
+        public ActionResult Save(Movie movie)
         {
-            return Content(year + "/" + month);
+            if (movie.Id == 0)
+            {
+                movie.AddedDate = DateTime.Now;
+
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.MovieGenreId = movie.MovieGenreId;
+                movieInDb.NumberInStock = movie.NumberInStock;
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Movies");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Movie = movie,
+                MovieGenres = _context.MovieGenres.ToList()
+            };
+
+            return View("MovieForm", viewModel);
         }
     }
 }

@@ -227,6 +227,10 @@
     <Compile Include="Migrations\202112090850077_UpdateMovieFields.Designer.cs">
       <DependentUpon>202112090850077_UpdateMovieFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112092019072_UpdateRequired.cs" />
+    <Compile Include="Migrations\202112092019072_UpdateRequired.Designer.cs">
+      <DependentUpon>202112092019072_UpdateRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -237,7 +241,8 @@
     <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +308,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -359,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112090850077_UpdateMovieFields.resx">
       <DependentUpon>202112090850077_UpdateMovieFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112092019072_UpdateRequired.resx">
+      <DependentUpon>202112092019072_UpdateRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
