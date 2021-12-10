@@ -231,12 +231,17 @@
     <Compile Include="Migrations\202112092019072_UpdateRequired.Designer.cs">
       <DependentUpon>202112092019072_UpdateRequired.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112101452095_fix.cs" />
+    <Compile Include="Migrations\202112101452095_fix.Designer.cs">
+      <DependentUpon>202112101452095_fix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -368,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112092019072_UpdateRequired.resx">
       <DependentUpon>202112092019072_UpdateRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112101452095_fix.resx">
+      <DependentUpon>202112101452095_fix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
