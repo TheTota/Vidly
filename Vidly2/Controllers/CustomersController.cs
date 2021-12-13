@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Vidly2.Models;
 using Vidly2.ViewModels;
 using System.Data.Entity.Validation;
+using System.Runtime.Caching;
 
 namespace Vidly2.Controllers
 {
