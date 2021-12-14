@@ -284,3 +284,5 @@ log/
 /PerformanceParc/UploadedPV/00008/PVReception.jpg
 /PerformanceParc/Presentation/PerformanceParc.Web/Logs
 /PerformanceParc/Presentation/PerformanceParc.Web/UploadedDediFilePath
+
+AppSettings.config
